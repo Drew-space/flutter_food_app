@@ -33,7 +33,7 @@ class _OnboardingState extends State<Onboarding> {
                 color: Colors.black,
               ),
             ),
-            SizedBox(height: 30.0),
+            SizedBox(height: 30),
             Padding(
               padding: const EdgeInsets.only(left: 20.0, right: 20.0),
               child: Text(
