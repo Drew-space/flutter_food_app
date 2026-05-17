@@ -10,6 +10,9 @@ class Cart extends StatefulWidget {
 class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('Cart')));
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(child: Text('Cart')),
+    );
   }
 }
