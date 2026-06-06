@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:food_app/page/bottomnav.dart";
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
@@ -50,26 +51,31 @@ class _OnboardingState extends State<Onboarding> {
 
             SizedBox(height: 130.0),
 
-            Material(
-              elevation: 3.0,
-              borderRadius: BorderRadius.circular(20.0),
-              child: Container(
-                height: 50,
-
-                width: MediaQuery.of(context).size.width / 2,
-                decoration: BoxDecoration(
-                  color: Color(0xffff734c),
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                child: Center(
-                  child: Text(
-                    "Next",
-
-                    style: TextStyle(
-                      fontSize: 18,
-
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+            GestureDetector(
+              onTap:() {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNav()));
+              },
+              child: Material(
+                elevation: 3.0,
+                borderRadius: BorderRadius.circular(20.0),
+                child: Container(
+                  height: 50,
+              
+                  width: MediaQuery.of(context).size.width / 2,
+                  decoration: BoxDecoration(
+                    color: Color(0xffff734c),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Next",
+              
+                      style: TextStyle(
+                        fontSize: 18,
+              
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
